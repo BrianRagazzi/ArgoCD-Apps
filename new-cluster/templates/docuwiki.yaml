@@ -1,0 +1,16 @@
+project: default
+source:
+  repoURL: 'https://charts.bitnami.com/bitnami'
+  targetRevision: 9.2.0
+  helm:
+    parameters:
+      - name: metrics.enabled
+        value: 'true'
+      - name: persistence.size
+        value: 2Gi
+      - name: persistence.storageClass
+        value: iscsi
+  chart: dokuwiki
+destination:
+  server: 'https://192.168.105.72:6443'
+  namespace: default
