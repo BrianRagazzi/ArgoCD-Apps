@@ -1,0 +1,8 @@
+project: default
+source:
+  repoURL: 'https://github.com/BrianRagazzi/sampleapps-k8s.git'
+  path: metrics-server-tkg
+  targetRevision: HEAD
+destination:
+  server: 'https://192.168.105.72:6443'
+  namespace: default
