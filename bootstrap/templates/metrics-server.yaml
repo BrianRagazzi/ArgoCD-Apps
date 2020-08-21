@@ -1,7 +1,7 @@
 project: default
 source:
-  repoURL: {{ .Values.spec.source.repoURL }}
-  targetRevision: {{ .Values.spec.source.targetRevision }}
+  repoURL: https://github.com/BrianRagazzi/ArgoCD-Apps.git
+  targetRevision: HEAD
   path: metrics-server
 destination:
   server: {{ .Values.spec.destination.server }}
