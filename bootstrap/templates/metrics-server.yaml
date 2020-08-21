@@ -1,8 +1,8 @@
 project: default
 source:
-  repoURL: https://github.com/BrianRagazzi/ArgoCD-Apps.git
+  repoURL: https://github.com/BrianRagazzi/sampleapps-k8s.git
   targetRevision: HEAD
-  path: metrics-server
+  path: metrics-server-tkg
 destination:
   server: {{ .Values.spec.destination.server }}
   namespace: kube-system
